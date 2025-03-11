@@ -3,6 +3,9 @@
 
 :root {
     --laranja-claro: #FF862A;
+    --alto-contraste-fundo: #000000;
+    --alto-contraste-texto: #ffffff;
+    --alto-contraste-link: #ffd700;
 }
 
 body {
@@ -61,33 +64,11 @@ section {
     border-radius: 30px;
     border: none;
     width: 14em;
-    /* Convertido para em aumenta o tamanh
-
-.esquerda-conteudo {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 1rem;
-}
-
-
-.botao-inicio {o da fonte por tabela*/
     height: 3em;
-    /* Convertido para em */
     align-content: center;
 
 }
 
-
-.esquerda-conteudo {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 1rem;
-}
-
-
-.botao-inicio {
 .display-4 {
     text-shadow: -5px 5px var(--laranja-claro);
 }
@@ -156,7 +137,6 @@ h2 {
     font-weight: bold;
 }
 
-/* chama classe do bootstrap para modificar a cor */
 .form-control {
     background-color: #F1EDEF;
 }
@@ -166,46 +146,52 @@ h2 {
     right:20px;
     z-index: 1000;
 }
-.rotacao-botao{ 
+
+.rotacao-botao{
     transform: rotate(-90deg);
     transform-origin: right center;
 }
+
 .opcoes-acessibilidade{
     margin-top:10px;
     display: flex;
     flex-direction: column;
 }
+
 .opcoes-acessibilidade button{
     margin-bottom: 5px;
 }
-:root {
-    --laranja-claro: #FF862A;
-    --alto-contraste-fundo: #000000;
-    --alto-contraste-texto: #ffffff;
-    --alto-contraste-link: #ffd700;
+.apresenta-lista{
+    display: none;
 }
+
 .alto-contraste{
     background-color: var(--alto-contraste-fundo);
     color: var(--alto-contraste-texto);
 }
+
 .alto-contraste header,
 .alto-contraste footer,
 .alto-contraste .formulario{
     background-color: var(--alto-contraste-fundo);
     color: var(--alto-contraste-texto);
 }
+
 .alto-contraste .nav-link{
     color: var(--alto-contraste-link);
 }
+
 .alto-contraste .botao-inicio,
 .alto-contraste .formulario button,
 .alto-contraste .btn-primary{
     background-color: var(--alto-contraste-link);
     color: var(--alto-contraste-fundo)
 }
+
 .alto-contraste #tropicalia {
     background: none;
 }
+
 .alto-contraste #galeria {
     background-color: var(--alto-contraste-fundo);
 }
